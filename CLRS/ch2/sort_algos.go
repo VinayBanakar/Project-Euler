@@ -35,8 +35,8 @@ func main() {
 	elapsedB := time.Since(startB)
 
 	fmt.Printf("SIZE ======= %v\n", SIZE)
-	fmt.Printf("Insertion\t %dns\n", elapsedI.Nanoseconds())
-	fmt.Printf("Selection\t %dns\n", elapsedS.Nanoseconds())
-	fmt.Printf("Merge\t\t %dns\n", elapsedM.Nanoseconds())
-	fmt.Printf("Bubble\t\t %dns\n", elapsedB.Nanoseconds())
+	fmt.Printf("Insertion\t %dms\n", elapsedI.Nanoseconds()/1000)
+	fmt.Printf("Selection\t %dms\n", elapsedS.Nanoseconds()/1000)
+	fmt.Printf("Merge\t\t %dms\n", elapsedM.Nanoseconds()/1000)
+	fmt.Printf("Bubble\t\t %dms\n", elapsedB.Nanoseconds()/1000)
 }
