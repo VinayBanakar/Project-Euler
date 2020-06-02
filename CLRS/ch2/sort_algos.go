@@ -34,7 +34,7 @@ func main() {
 	bubble(slcB)
 	elapsedB := time.Since(startB)
 
-	fmt.Printf("SIZE ======= %v\n", SIZE)
+	fmt.Printf("SIZE ======== %v\n", SIZE)
 	fmt.Printf("Insertion\t %dms\n", elapsedI.Nanoseconds()/1000)
 	fmt.Printf("Selection\t %dms\n", elapsedS.Nanoseconds()/1000)
 	fmt.Printf("Merge\t\t %dms\n", elapsedM.Nanoseconds()/1000)
